@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0) 
 
   return (
     <>
@@ -32,4 +32,4 @@ function App() {
   )
 }
 
-export default App
+export default App //將元件往外丟讓html可以收到

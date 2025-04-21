@@ -1,9 +1,9 @@
-function App() {
+function About() {
     return (
         <>
-        <h2>關於我門</h2>
+            <h2>About</h2>
 
         </>
     )
 
-}export default App
+} export default About

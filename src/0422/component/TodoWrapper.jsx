@@ -9,10 +9,19 @@ function TodoWrapper() {
         { content: '對發票', id: Math.random() },
     ])
 
+    //建立加入新的todo內容(函式)
+    const addTodo=(newContent)=>{
+        //其餘運算子
+        setTodos([...todos,{content:newContent, id: Math.random()}])
+
+    }
+
+
     return (
         <div className="wrapper">
             <h1>代辦事項</h1>
-            <CreateForm />
+            {/* addTodo式屬性，後面括號內是function */}
+            <CreateForm addTodo={addTodo}/>
             {
                 todos.map((todo) => {
                     return <Todo todo={todo} key={todo.id}/>

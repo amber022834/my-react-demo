@@ -70,4 +70,10 @@ body {
    margin: 0px;
     color: #333;}
 
+.completed{
+    /* opacity: .4; */
+    color: red;
+    text-decoration: line-through;
+}
+
 

@@ -1,7 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* 內容會在box的範圍中 */
+    box-sizing: border-box;
+}
+
 body{
     background-color: #eee;
+    color: white;
+
 }
-#container {
+
+/* #container {
     width: 768px;
     margin: 0 auto;
     padding: 20;
@@ -20,14 +30,14 @@ h1 {
 #img {
     border: 1px solid red;
     /* width: 100%; */
-    display:flex;
-    justify-content:space-between;
+    /* display:flex;
+    justify-content:space-between; */
     /* padding: 10; */
     
-}
+/* }
 
 
 
 .img2 {
     width: 80%;
-}
+} */ 

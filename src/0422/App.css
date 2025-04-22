@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 內容會在box的範圍中 */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    color: white;
+
+}
+
+.wrapper {
+    background-color: #333;
+    width: 45%;
+    margin: 50px auto;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+.createform {
+    /* margin: 0px;
+   padding: 0px;
+    text-align: center; */
+    border: 1px #ffff solid;
+    width: 100%;
+    height: 40px;
+    margin: 25px 0px;
+    display: flex;
+}
+
+.createform>input {
+    /* border: #eee 1px solid;
+    /* border-color: white; */
+    /* background-color: transparent; */
+    outline: none;
+    border: none;
+    background: none;
+    /* 打字色白色 */
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.createform>button{
+    border: none;
+    background-color:#eee;
+    width:15%;
+
+}
+
+

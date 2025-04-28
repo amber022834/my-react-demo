@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <!-- HTML分頁效果，用html做 -->
+
+    <div id="page1">
+        我是第一頁
+        <br>
+        <button onclick="ChangePage(1,'下一頁');" value="下一頁">下一頁</button>
+    </div>
+
+    <div id="page2" style="display: none;">
+        我是第二頁
+        <br>
+        <button onclick="ChangePage(2,'上一頁');" value="上一頁">上一頁 </button>
+        <button onclick="ChangePage(2,'下一頁');" value="下一頁">下一頁</button>
+    </div>
+
+    <div id="page3" style="display: none;">
+        我是第三頁
+        <br>
+        <button onclick=" ChangePage(3,'上一頁');" value="上一頁">上一頁 </button>
+    </div>
+
+    <script>
+        function ChangePage(page, value) {
+            if (page == 1 && value == '下一頁') {
+                document.getElementById('page2').style.display = "block";
+                document.getElementById('page1').style.display = "none";
+
+            }
+
+            if (page == 2) {
+                if (value == '上一頁') {
+                    document.getElementById('page2').style.display = "none";
+                    document.getElementById('page1').style.display = "block";
+                }
+                else if (value == '下一頁')
+                    document.getElementById('page2').style.display = "none";
+                document.getElementById('page3').style.display = "block";
+            }
+
+            if (page == 3 && value == '上一頁') {
+                document.getElementById('page3').style.display = "none";
+                document.getElementById('page2').style.display = "block";
+
+            }
+        }
+
+
+        // 用react做(沒成功)
+        // function ChangePage({ page, setPage, buttontype }) {
+        //     const HandelClick = () => {
+        //         if (page < 3 && buttontype == "下一頁") {
+        //             setPage(page + 1);
+
+        //         }
+
+        //         if (page > 1 && buttontype == "上一頁") {
+        //             setPage(page - 1);
+        //         }
+        //     }
+        //     return (
+        //         <>
+        //             <button onClick={HandelClick} >{buttontype}</button>
+        //         </>
+        //     )
+        // }
+
+
+        // // //程式進入點
+        // function App() {
+        //     return (
+        //         <>
+        //             <div id="第一頁" >
+        //                 <h2>第一頁</h2>
+        //                 <ChangePage buttontype={"下一頁"} />
+        //             </div>
+
+        //             <div id="第二頁" style={{ display: none }}>
+        //                 <h2>第二頁</h2>
+        //                 <ChangePage buttontype={"下一頁"} />
+        //                 <ChangePage buttontype={"上一頁"} />
+        //             </div>
+        //             <div id="第三頁" style={{ display: none }}>
+        //                 <h2>第三頁</h2>
+        //                 <ChangePage buttontype={"上一頁"} />
+        //             </div>
+
+        //         </>
+        //     )
+        // }
+        // export default App
+
+    </script>
+
+</body>
+
+</html>

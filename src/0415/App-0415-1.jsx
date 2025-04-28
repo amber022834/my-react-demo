@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-//props.count可以簡寫為{count}，j或是寫為{(propsCount)}
+//props.count可以簡寫為{count}，或是寫為{(propsCount)}
 function ChildComponent(props){
 return <div>{props.count}</div>
 }

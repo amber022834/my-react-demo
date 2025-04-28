@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    <!-- HTML分頁效果 -->
+    <div>
+        <span onclick="changeToAbout();">About</span>
+        <span onclick="changeToNews();">News</span>
+    </div>
+
+    <hr>
+
+    <div id="about" style="display: block;">
+        大家好，我是Sara
+    </div>
+
+    <div id="news" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa, quibusdam reprehenderit quia
+        perspiciatis quos dolores. Tempore unde culpa corporis necessitatibus cum illum, aliquid accusamus ut, quibusdam
+        iure consequatur aspernatur?
+    </div>
+
+    <script>
+        function changeToAbout() {
+            //顯示about
+            let about = document.querySelector("#about");
+            about.style.display = "block";
+
+            //隱藏news
+            let news=document.querySelector("#news");
+            news.style.display = "none";
+        }
+
+        function changeToNews() {
+            //隱藏about
+            let about = document.querySelector("#about");
+            about.style.display = "none";
+
+            //顯示news
+            let news=document.querySelector("#news");
+            news.style.display = "block";
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

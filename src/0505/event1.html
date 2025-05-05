@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- JS綁定事件方法一:html行內綁定，需要寫onclick -->
+    <input type="button" id="btn1" value="送出1" onclick="send1()">
+    <script>
+        function send1() {
+            console.log('html行內綁定');
+            console.log(e);
+        }
+    </script>
+
+    <!-- JS綁定事件方法二:JS敘述綁定，，被綁定的html元素必須是id  -->
+    <input type="button" id="btn2" value="送出2" onclick="send2()">
+    <script>
+
+        btn2.onclick = function () {
+            console.log('JS敘述綁定');
+        }
+    </script>
+
+    <!-- JSJS綁定事件方法三: 事件監聽，寫click即可 -->
+    <input type="button" id="btn3" value="送出3">
+    <script>
+        let btn3 = document.querySelector('#btn3');
+
+        function send3(e) {
+            console.log("事件監聽函式2");
+            console.log(e);
+        }
+
+        btn3.ddEventListener = ("click", send3)
+
+        btn3.addEventListener = ('click', (e) => {
+            console.log('事件監聽函式1');
+            console.log(e);
+        })
+
+    </script>
+
+    <!-- 當視窗大小改變時 -->
+    <script>
+        window.addEventListener("resize", (e) => {
+            // console.log('視窗已經改變大小')
+            // 當視窗改變大小時，取得寬高
+            console.log("寬高一"+e.target.innerWidth,innerHeight);
+            console.log("寬高二"+e.target.innerWidth,e.target.innerHeight);
+
+        })
+    </script>
+</body>
+
+</html>

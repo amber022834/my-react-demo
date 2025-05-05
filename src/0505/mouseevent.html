@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h2>滑鼠常見事件</h2>
+    <ul>
+        <li>click:左鍵一下</li>
+        <li>dbclick:左鍵兩下</li>
+        <li>mousedown:按下滑鼠時</li>
+        <li>mouseup:放開滑鼠時</li>
+        <li style="color: red;">mouseover:滑鼠經過時</li>
+        <li style="color: red;">mouseout:滑鼠離開時</li>
+        <li style="color: green;">mouseenter:滑鼠進入時</li>
+        <li style="color: green;">mouseleave:滑鼠離開時</li>
+        <li>mousemove:滑鼠移動時</li>
+        <li>mousewheel:滑鼠滾輪時</li>
+    </ul>
+
+    <hr>
+    <h2>取得滑鼠游標位置:
+        <span id="xy"></span>
+    </h2>
+    <img src="../../public/images/png1.jpg" alt="" width="200px" id="photo1">
+    <script>
+        //取得網頁中任一位置的座標
+        // document.addEventListener("mousemove", (e) => {
+        //     document.getElementById("xy").textContent = `${e.clientX},${e.clientY}`;
+
+        // })
+
+
+        //取得photo1的位置
+        // let photo1 = document.getElementById("photo1");
+        // photo1.addEventListener('mousemove', (e) => {
+        //     console.log(e);
+        //     document.getElementById("xy").textContent = `${e.clientX},${e.clientY}`;
+
+        // })
+
+        //取得photo1圖片內的座標(以圖片左上角為起始點)
+        //碰到html標籤要有反映要用innerhtml
+        //screen:螢幕道點擊物件的位置
+        photo1.addEventListener('click', e => {
+            document.getElementById("xy").innerHTML = `<br>
+            clientX:${e.clientX},clientY:${e.clientY}<br>
+            offsetX:${e.offsetX}, offsetY${e.offsetY}<br>
+            screenX:${e.screenX}, screenY${e.screenY}<br>
+            pageX${e.pageX},pageY${e.pageY}<br>
+            X:${x},Y:${Y}`
+            ;
+
+        })
+
+        // //取得photo1圖片內的座標(以頁面左上角為起始點)
+        // photo1.addEventListener('dbclick', e => {
+        //     document.getElementById("xy").textContent = `dbclick${e.pageX},${e.pageY}`;
+
+        // })
+
+
+    </script>
+
+
+    <img src="../../public/images/png2.jpg" alt="" width="200px" id="photo2">
+    <script>
+        //取得photo2位置(左鍵一下)
+        let photo2 = document.getElementById("photo2");
+        photo2.addEventListener('click', (e) => {
+            let curX = e.clientX;
+            let curY = e.clientY;
+            document.getElementById("xy").textContent = `第二張圖點擊的座標${e.clientX},${e.clientY}`;
+            console.log(curX, curY);
+
+        })
+
+    </script>
+
+
+</body>
+
+</html>

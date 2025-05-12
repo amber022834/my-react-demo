@@ -8,7 +8,7 @@ function App() {
     const UserContext = createContext({});
 
     //建立使用者變數
-    const [username, setUsername]=useState('')
+    const [username, setUsername]=useState('demo')
 
     //建立登入紐控制
     const [isLogin,setIsLogin]=useState(false);

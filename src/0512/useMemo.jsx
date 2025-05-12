@@ -1,5 +1,5 @@
 import { filter, title, tr } from "motion/react-client"
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 function App() {
 
@@ -7,28 +7,28 @@ function App() {
     const prodData = [
         {
             id: 1,
-            title: "prod1",
+            title: "ASUS",
             price: 80
         },
 
         {
             id: 2,
-            title: "prod2",
+            title: "ACER",
             price: 120
         },
         {
             id: 3,
-            title: "prod3",
+            title: "MAC",
             price: 150
         },
         {
             id: 4,
-            title: "prod4",
+            title: "DELL",
             price: 200
         },
         {
             id: 5,
-            title: "prod5",
+            title: "MIS",
             price: 100
         }
 
@@ -67,6 +67,25 @@ function App() {
     //搜尋變數
     const [search, setSearch] = useState('');
 
+    //建立排序與搜尋函式
+    const filterProds=useMemo(()=>{
+
+        return[...prods]
+        .sort((a,b)=>{
+            return ascending?a.price-b.price:
+            b.price-a.price
+        })
+
+//  區分大小寫       .filter((prod) => {
+//     return prod.title.toLowerCase().includes(search.toLowerCase());
+// });
+
+        .filter((prod)=>{
+            return prod.title.match(search);
+            
+        })
+    },[ascending,search]);
+
 
     return (
         <>
@@ -90,7 +109,7 @@ function App() {
                 onChange={(e) => setSearch(e.target.value)} />
 
             {/* 顯示表格資料 */}
-            <ProdTable filterProds={prods} />
+            <ProdTable filterProds={filterProds} />
 
 
         </>

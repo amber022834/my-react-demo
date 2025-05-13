@@ -1,7 +1,7 @@
 export default function App() {
 
     //寫入資料
-    // window.localStorage.setItem('book1','html')
+    // window.localStorage.setItem('book1','html') 接受字串
     return (
         <>
             <h1>本地端存取資料</h1>
@@ -23,8 +23,17 @@ export default function App() {
                 }
 
             }}>讀取資料</button>
-            <button>刪除資料</button>
-            <button>全部刪除資料</button>
+
+
+            <button onClick={()=>{
+                //刪除第二個
+                window.localStorage.removeItem('book2')
+            }}
+            >刪除資料</button>
+            <button onClick={()=>{
+               window.localStorage.clear();
+            }}
+            >全部刪除資料</button>
         </>
     )
 }

@@ -3,7 +3,8 @@
     width: 200px;
     height: 200px;
     display: block;
-    overflow: hidden;   /* 超出紅框範圍隱藏 */
+    overflow: hidden;
+    /* 超出紅框範圍隱藏 */
 }
 
 
@@ -14,11 +15,11 @@
 }
 
 
-.imgScale img{
+.imgScale img {
     transform: scale(1.5);
 }
 
-.box{
+.box {
     width: 300px;
     height: 200px;
     background-color: #333;
@@ -29,13 +30,17 @@ a{
     text-decoration: underline;
     color: red;
 }
-
 a:hover{
-    text-decoration: none;
+    text-decoration: none;    
 }
 
-.ttpPanel{
-     padding: 15px;
+
+.ttpShow{
+    display: none;    
+   
+}
+#ttpPanel{
+    padding: 15px;
     width: 200px;
     text-align: left;
     border: 3px solid #ccc;
@@ -43,9 +48,4 @@ a:hover{
     z-index: 99;
     background-color: #fff;
     display: none;
-
-
 }
-
-
-

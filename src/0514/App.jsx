@@ -17,13 +17,14 @@ export default function App() {
                     <ul>
                         <li className="cats"><img src="./images/cats1.jpg" alt="" /></li>
                         <li className="cats"><img src="./images/cats2.jpg" alt="" /></li>
+                        <li className="food"><img src="./images/food2.jpg" alt="" /></li>
                         <li className="cats"><img src="./images/cats3.jpg" alt="" /></li>
                         <li className="view"><img src="./images/view2.jpg" alt="" /></li>
                         <li className="view"><img src="./images/view3.jpg" alt="" /></li>
                         <li className="cats"><img src="./images/cats6.jpg" alt="" /></li>
 
                         <li className="food"><img src="./images/food1.jpg" alt="" /></li>
-                        <li className="food"><img src="./images/food2.jpg" alt="" /></li>
+                        
                         <li className="food"><img src="./images/food3.jpg" alt="" /></li>
                         <li className="cats"><img src="./images/cats4.jpg" alt="" /></li>
                         <li className="cats"><img src="./images/cats5.jpg" alt="" /></li>

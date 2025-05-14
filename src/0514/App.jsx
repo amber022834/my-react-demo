@@ -28,6 +28,7 @@ export default function App() {
                         if ($(this).hasClass(filterClass)) {
                             // yes
                             // 顯示動畫 (1.擴展寬度 2.提升透明度顯示圖片)
+                            //無動畫就不用stop和animate
                             $(this).css({ display: 'block' }).stop().animate({ width: listWidth }, 1500);
                             // find()方法中，使用全域選擇器「*」，選取filterList所有元素
                             $(this).find('*').stop().animate({ opacity: '1' }, 1500);

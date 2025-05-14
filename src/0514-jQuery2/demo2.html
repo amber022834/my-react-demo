@@ -4,72 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>旋轉木馬</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/textslider.css">
     <style>
         #wrapper {
             width: 960px;
             margin: 0 auto;
+            text-align: center;
         }
 
-        #carousel {
-            background-color: #ccc;
-            padding: 5px;
-        }
-
-        #carousel img {
-            width: 150px;
-            height: 120px;
-            margin: 5px;
-            /* 垂直對齊，取消html5預設 */
-            vertical-align: top;
+        .slideText {
+          
+            height: 3.3em;
+            font-size: 20px;
         }
     </style>
 </head>
 
 <body>
     <div id="wrapper">
-        <h1>旋轉木馬</h1>
+        <h1>文字輪播</h1>
 
-        <div id="carousel">
+        <!-- behavior -->
+        <!-- alternate(左右來回) -->
+        <!-- alternate(只捲動一次) -->
+        <!-- 捲動的速度 -->
+
+        <!-- <marquee SCROLLAMOUNT="10" behavior="" direction="left" style="background-color: bisque; width: 300px;">
+            跑馬燈
+            <img src="./images/01.jpg" alt="" width="50">
+        </marquee> -->
+
+        <div class="slideText">
             <ul>
-                <li><img src="./images/01.jpg" alt=""></li>
-                <li><img src="./images/02.jpg" alt=""></li>
-                <li><img src="./images/03.jpg" alt=""></li>
-                <li><img src="./images/04.jpg" alt=""></li>
-                <li><img src="./images/05.jpg" alt=""></li>
+                <li>News1</li>
+                <li>News2</li>
+                <li>News3</li>
+                <li>News4</li>
+                <li>News5</li>
+                <li>News6</li>
+                <li>News7</li>
+                <li>News8</li>
+                <li>News9</li>
             </ul>
 
         </div>
-
     </div>
 
-    <!-- jquery主程式 -->
     <script src="./js/jquery-1.11.3.min.js"></script>
-    <!-- 旋轉木馬程式 -->
-    <script src="./js/jquery.jcarousellite.min.js"></script>
-
-    <!-- 自訂js -->
+    <script src="./js/jquery.textslider.js"></script>
     <script>
         $(function () {
-            $('#carousel').jCarouselLite({
-                // 多久時間動一下，每次輪播的張數
-                auto:1200,
+            $('.slideText').textslider(
+                {
+                    //捲動方向(預設事往上 scrollUp)
+                    // direction:'scrollDown',
 
-                //輪播張數
-                scroll:2,
+                    //捲動速度
+                    scrollSpeed: 600,
 
-                //可見張數
-                visible:2,
+                    //捲動行數=顯示行數
+                    scrollNum:1,
 
-                speed:1000,
-            });
-
-        }
-
-        );
-
-
+                    //停頓時間
+                    pause: 500,
+                }
+            );
+        });
     </script>
+
 </body>
 
 </html>

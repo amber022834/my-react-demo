@@ -28,53 +28,64 @@ export default function App() {
                         <dir className='row'>
                             <div className="col-md-7">
                                 <div className="row row-cols-3 g-3">
-                                    <div class="card ">
-                                        <img src="https://images.unsplash.com/photo-1582716401301-b2407dc7563d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80" class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <h6 class="card-title">
-                                                產品名稱
-                                                <span className="float-end">NT200</span>
-                                            </h6>
+                                    <div className="col">
+                                        <div class="card ">
+                                            <img src="https://images.unsplash.com/photo-1582716401301-b2407dc7563d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <h6 class="card-title">
+                                                    產品名稱
+                                                    <span className="float-end">NT200</span>
+                                                </h6>
 
-                                            <button class="btn btn-outline-primary w-100" type="button">加入購物車</button>
+                                                <button class="btn btn-outline-primary w-100" type="button">加入購物車</button>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div class="card ">
-                                        <img src="https://images.unsplash.com/photo-1582716401301-b2407dc7563d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80" class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <h6 class="card-title">
-                                                產品名稱
-                                                <span className="float-end">NT200</span>
-                                            </h6>
+                                    <div className="col">
+                                        <div class="card ">
+                                            <img src="https://images.unsplash.com/photo-1582716401301-b2407dc7563d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <h6 class="card-title">
+                                                    產品名稱
+                                                    <span className="float-end">NT200</span>
+                                                </h6>
 
-                                            <button class="btn btn-outline-primary w-100" type="button">加入購物車</button>
+                                                <button class="btn btn-outline-primary w-100" type="button">加入購物車</button>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div class="card ">
-                                        <img src="https://images.unsplash.com/photo-1582716401301-b2407dc7563d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80" class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <h6 class="card-title">
-                                                產品名稱
-                                                <span className="float-end">NT200</span>
-                                            </h6>
+                                    <div className="col">
+                                        <div class="card ">
+                                            <img src="https://images.unsplash.com/photo-1582716401301-b2407dc7563d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <h6 class="card-title">
+                                                    產品名稱
+                                                    <span className="float-end">NT200</span>
+                                                </h6>
 
-                                            <button class="btn btn-outline-primary w-100" type="button">加入購物車</button>
+                                                <button class="btn btn-outline-primary w-100" type="button">加入購物車</button>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div class="card ">
-                                        <img src="https://images.unsplash.com/photo-1582716401301-b2407dc7563d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80" class="card-img-top" alt="..." />
-                                        <div class="card-body">
-                                            <h6 class="card-title">
-                                                產品名稱
-                                                <span className="float-end">NT200</span>
-                                            </h6>
+                                    <div className="col">
+                                        <div class="card ">
+                                            <img src="https://images.unsplash.com/photo-1582716401301-b2407dc7563d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80" class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <h6 class="card-title">
+                                                    產品名稱
+                                                    <span className="float-end">NT200</span>
+                                                </h6>
 
-                                            <button class="btn btn-outline-primary w-100" type="button">加入購物車</button>
+                                                <button class="btn btn-outline-primary w-100" type="button">加入購物車</button>
+                                            </div>
                                         </div>
                                     </div>
+
+
+
                                 </div>
                                 {/* 內層格線範圍 */}
                                 {/* 產品列表區(左) */}
@@ -87,8 +98,8 @@ export default function App() {
                                             <tr >
                                                 <td><a href="">x</a></td>
                                                 <td>
-                                                     <img src="https://images.unsplash.com/photo-1582716401301-b2407dc7563d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80" className="table-img" alt="..." />
-                                                  
+                                                    <img src="https://images.unsplash.com/photo-1582716401301-b2407dc7563d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80" className="table-img" alt="..." />
+
                                                 </td>
 
                                                 <td>
@@ -102,11 +113,11 @@ export default function App() {
                                                 <td className='text-end'>Nt400</td>
                                             </tr>
 
-                                              <tr >
+                                            <tr >
                                                 <td><a href="">x</a></td>
                                                 <td>
-                                                     <img src="https://images.unsplash.com/photo-1582716401301-b2407dc7563d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80" className="table-img" alt="..." />
-                                                  
+                                                    <img src="https://images.unsplash.com/photo-1582716401301-b2407dc7563d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80" className="table-img" alt="..." />
+
                                                 </td>
 
                                                 <td>

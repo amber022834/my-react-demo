@@ -1,24 +1,21 @@
-export default function navbar() {
+import { useContext } from 'react';
+import { CartContext } from '../store';
+
+
+export default function Navbar() {
+    const [state] = useContext(CartContext);
     return (
-        <>
-            <nav class="navbar navbar-light bg-light">
-                <div class="container-fluid">
-                    <span class="navbar-brand" href="#">Navbar</span>
-                    <button type="button" className="btn btn-outline-success position-relative">
-                        購物車
-                        <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                            3
-                            <span className="visually-hidden">items in cart</span>
-                        </span>
-                    </button>
-
-
-
-
-                </div>
-            </nav>
-        </>
+        <nav className="navbar navbar-light bg-light">
+            <div className="container-fluid">
+                <span className="navbar-brand">Navbar</span>
+                <button className="btn btn-outline-success position-relative" type="button">
+                    購物車
+                    <span className="badge bg-danger position-absolute top-0 start-100 translate-middle">
+                        {/* 99 */}
+                        {state.cartList.length}
+                    </span>
+                </button>
+            </div>
+        </nav>
     )
-
 }
-
